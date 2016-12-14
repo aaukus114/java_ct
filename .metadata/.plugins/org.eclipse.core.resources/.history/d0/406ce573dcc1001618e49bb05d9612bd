@@ -1,0 +1,12 @@
+
+public class shapeTest {
+	public static void main(String[] args) {
+		Circle c = new Circle(10);
+		Rectangle r = new Rectangle(10,20);
+		Triangle t = new Triangle(10,20);
+		
+		System.out.println("원 :" + c.GetArea());
+		System.out.println("사각형 : " + r.GetArea());
+		System.out.println("삼각형 :" + t.GetArea());
+	}
+}

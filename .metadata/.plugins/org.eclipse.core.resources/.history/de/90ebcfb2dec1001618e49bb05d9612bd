@@ -1,0 +1,8 @@
+
+public class ThreeDimenShape extends Shape{
+
+	public static void getVolume()
+	{
+		
+	}
+}

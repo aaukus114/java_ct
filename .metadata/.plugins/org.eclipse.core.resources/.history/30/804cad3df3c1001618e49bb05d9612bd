@@ -1,0 +1,45 @@
+import java.util.Random;
+
+public class as {
+
+	public static void main(String[] args) {
+		
+		
+		int j =1;
+		int PLH,MSH;
+		Random rn = new Random();
+		int i = rn.nextInt(5+1);
+		Player pl = new Player(10,i);
+		Monster ms = new Monster(10,i);
+		
+		while (true)
+		{
+			i = rn.nextInt(5+1);
+			if(j == 1)
+			{
+				PLH=pl.Acctack(i);
+				System.out.println("player에 공격 : " +i);
+				if(PLH<=0)
+				{
+					System.out.println("Player 패배");
+					break;
+				}
+			}
+			if(j == 2)
+			{
+				MSH=ms.Acctack(i);
+				System.out.println("moster에 공격 : " +i);
+				if(MSH<=0)
+				{
+					System.out.println("Moster 패배");
+					break;
+				}
+			}
+			if(j ==1)
+				j=2;
+			else if(j==2)
+				j=1;
+			
+		}
+	}
+}

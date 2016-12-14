@@ -1,0 +1,6 @@
+
+public abstract class ThreeDimenShape extends Shape{
+
+	public abstract float GetVolume();
+
+}
